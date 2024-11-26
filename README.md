@@ -34,7 +34,7 @@ cd terraform-cloud-variable-export
 ```
 ### 2. Run the Script
 ```bash
-bash export_variables.sh
+bash get_tf_variables.sh
 ```
 ### 3. Provide the Required Inputs
 - API Token: Paste your Terraform Cloud API token.   
