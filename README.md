@@ -29,7 +29,7 @@ This script allows you to export variables from a Terraform Cloud workspace and 
 
 ### 1. Clone the Repository  
 ```bash
-git clone https://github.com/your-username/terraform-cloud-variable-export.git
+git clone https://github.com/wwwaiyan/terraform-cloud-variable-export.git
 cd terraform-cloud-variable-export
 ```
 ### 2. Run the Script
