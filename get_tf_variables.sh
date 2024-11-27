@@ -1,13 +1,13 @@
 #!/bin/bash
-##User Input for Terraform Cloud
+## User Input for Terraform Cloud
 read -sp "Enter the Terraform Cloud API Token: " TFC_TOKEN
-echo 
+echo
 read -p "Enter the Organization Name: " ORG_NAME
 read -p "Enter the Workspace Name: " WORKSPACE_NAME
-read -p "Enter the tfvars file name (press Enter for default 'terraform.tfvars'): " TFVARS_FILE
+read -p "Enter the tfvars file name (press Enter for default '${WORKSPACE_NAME}-terraform-variables.tfvars'): " TFVARS_FILE
 
 # Set default value for TFVARS_FILE if not provided
-TFVARS_FILE=${TFVARS_FILE:-terraform.tfvars}
+TFVARS_FILE=${TFVARS_FILE:-"${WORKSPACE_NAME}-terraform-variables.tfvars"}
 
 # Retrieve the Workspace ID using the provided workspace name and token
 WORKSPACE_ID=$(curl \
